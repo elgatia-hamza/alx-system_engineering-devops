@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -ap1 | printf "%s, " $(LC_COLLATE=C sort -d) | sed 's/, $/\n/'
